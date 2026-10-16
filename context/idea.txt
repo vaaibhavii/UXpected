@@ -1,0 +1,15 @@
+THE HONEST MILLION
+Too many options. One big goal.
+The Persona
+Aarav is 19, in his second year of college, and new to money. He has about 78,000 a month from pocket money and a part-time gig, has never invested, and wants to become a millionaire.
+The moment he starts, he is buried in options: savings accounts, fixed deposits, bonds, gold, index funds, SIPs, and dozens more, each with its own risk, lock-in, and fees. Friends and social media give conflicting advice, and nobody has told him that some years lose money.
+The Challenge
+Build a product that takes Aarav from "I want to be a millionaire" to a realistic plan he understands and can stick with. His problem isn't a lack of options. It's too many he can't evaluate.
+The product should help him:
+1. Make sense of the options. Understand how they differ and which ones matter for someone like him, in simple language.
+2. Narrow down to a plan. Choose a mix and amounts, and see how each choice changes how long the goal takes.
+3. Manage it over time. See what he holds and how it is doing, without a dashboard of competing numbers.
+4. Feel that not every year is good. Experience a market decline, understand what it does to his plan, and still believe in it.
+What we're looking for
+We are not looking for a trading platform, a gamified app, or a wall of financial charts. Show too much and Aarav freezes; hide too much and the product decides for him. How your design resolves this is the challenge. The emphasis is on thoughtful UX, clear communication, and frontend execution over backend complexity. Simulated data is fine.
+Creativity is encouraged: treat the points above as a starting point, not a checklist.

@@ -1,0 +1,783 @@
+# THE HONEST MILLION — COMPLETE PRODUCT WORKFLOW & IMPLEMENTATION PLAN
+
+Continue building my existing project, **The Honest Million**. First inspect the current codebase and understand what has already been implemented. Preserve all working screens, components, character illustrations, styling, animations, and navigation. Do not rebuild the project from scratch.
+
+I want to build a complete, interactive student finance and beginner-investing experience for a college student named Aarav.
+
+The main goal is to help Aarav understand his savings, plan his monthly budget, learn about investments, explore suitable SIP options, and create a long-term wealth-building plan.
+
+This is a design-led frontend competition project. The experience must be visually distinctive, playful, animated, and genuinely interactive.
+
+Reference for visual direction: https://mildsugardesign.jp/
+
+The visual inspiration should come from its playful illustrated storytelling and the opening scene featuring a boy sitting at his desk. Create original artwork and layouts rather than copying the reference website.
+
+---
+
+# PART 1 — THE COMPLETE USER JOURNEY
+
+Implement the following flow in order. Connect every screen through working interactions and shared application state.
+
+## SCREEN 1 — THE LANDING PAGE
+
+STATUS: Already implemented.
+
+The landing page introduces The Honest Million through the illustrated world of Aarav.
+
+Design:
+
+* Aarav sitting at his study desk.
+* Warm cream background.
+* Expressive typography.
+* Hand-drawn decorative details.
+* Playful objects and subtle animations.
+* A prominent CTA.
+
+The screen should immediately establish the visual identity of the product.
+
+Preserve the existing implementation.
+
+## SCREEN 2 — WELCOME, AARAV
+
+STATUS: Already implemented.
+
+A welcoming transition introduces Aarav to his money journey.
+
+The copy should feel conversational, warm, and slightly playful.
+
+Preserve the existing character, layout, and transitions.
+
+The next screen after this welcome is the savings screen.
+
+## SCREEN 3 — HOW MUCH HAVE YOU SAVED?
+
+PURPOSE: Understand how much money Aarav has already accumulated.
+
+Headline:
+"Okay Aarav, let's talk money."
+
+Supporting copy:
+"First things first… how much have you managed to save up so far?"
+
+Present selectable amounts:
+
+* ₹0 — Starting fresh
+* ₹500
+* ₹1,000
+* ₹2,500
+* ₹5,000
+* ₹10,000+
+* Enter my own amount
+
+Include:
+"I'm not sure yet."
+
+Interactions:
+
+* Selecting an amount updates the savings display.
+* Animate coins entering a wallet, coin jar, or savings box.
+* Add subtle reactions from Aarav.
+* Highlight the selected option.
+* Allow any valid non-negative custom amount.
+* Provide friendly, non-judgmental feedback.
+* Distinguish an unknown amount from ₹0.
+
+CTA:
+"LET'S KEEP GOING ↗️"
+
+Save the response and transition into the next scene.
+
+## SCREEN 4 — HOW MUCH MONEY COMES IN EACH MONTH?
+
+PURPOSE: Understand Aarav's monthly income or allowance.
+
+Headline:
+"And how much money comes your way each month?"
+
+Supporting copy:
+"Your pocket money, your internship stipend, your side hustle — let's add it up."
+
+Allow Aarav to enter a monthly amount.
+
+Default example:
+₹8,000 per month.
+
+Optional income sources:
+
+* Pocket money.
+* Internship stipend.
+* Part-time work.
+* Freelancing or side hustle.
+* Other.
+
+Allow multiple income sources if useful, and calculate their total automatically.
+
+Interactions:
+
+* Editable currency amounts.
+* Animated number updates.
+* Playful illustrations related to the income source.
+* Immediate visual feedback.
+* Clear validation.
+
+The ₹8,000 amount is an editable starting example, not a fixed assumption about every user.
+
+CTA:
+"SHOW ME WHERE IT GOES ↗️"
+
+Save the monthly income and continue.
+
+## SCREEN 5 — LET'S BUILD YOUR BUDGET
+
+PURPOSE: Allocate monthly income across four categories.
+
+Headline:
+"Okay, where should your money go?"
+
+Create four visually distinct, editable allocation areas:
+
+1. ESSENTIALS
+   Travel, food, college expenses, and necessities.
+
+2. FUN MONEY
+   Outings, shopping, entertainment, and hobbies.
+
+3. EMERGENCY SAVINGS
+   Money set aside for unexpected expenses.
+
+4. INVESTMENTS
+   Money Aarav may be able to invest for longer-term goals.
+
+Use colourful visual blocks, illustrated objects, animated numbers, and playful controls rather than a conventional spreadsheet.
+
+Starting example for an ₹8,000 monthly income:
+
+* Essentials: ₹2,000.
+* Fun money: ₹1,000.
+* Emergency savings: ₹2,000.
+* Investments: ₹3,000.
+
+IMPORTANT: All four allocations must add up to ₹8,000. The user can edit every amount, and the application must automatically calculate the remaining balance.
+
+Interactions:
+
+* Edit any category.
+* Increase or decrease amounts.
+* Update the allocation visualisation immediately.
+* Show each category's percentage of monthly income.
+* Show the total allocated amount.
+* Show the remaining amount.
+* Prevent accidental over-allocation or clearly explain an over-budget state.
+* Provide an easy way to restore the suggested allocation.
+
+Do not force every user to follow the same budget.
+
+CTA:
+"LET'S GROW THAT MONEY ↗️"
+
+## SCREEN 6 — THE BUDGET REVEAL
+
+PURPOSE: Create an emotionally satisfying transition from budgeting to investing.
+
+Headline:
+"Look at that. Your money has a plan."
+
+Reveal the four allocations through a playful animated composition.
+
+The investment portion should receive special visual emphasis, with the corresponding amount expanding into a new scene.
+
+For example:
+"₹3,000 a month could be your starting investment plan."
+
+This is a planned allocation, not an actual investment or a guaranteed return.
+
+Use a smooth colour-block transition or a sliding scene transition into the investment journey.
+
+CTA:
+"LET'S EXPLORE ↗️"
+
+## SCREEN 7 — CHOOSE YOUR INVESTMENT JOURNEY
+
+PURPOSE: Introduce the idea of investment risk in a simple and approachable way.
+
+Headline:
+"Now for the interesting part."
+
+Supporting copy:
+"Different investments come with different levels of risk. Let's find out what makes sense for you."
+
+Present three large interactive choices.
+
+OPTION A — I'M OKAY WITH UPS AND DOWNS
+
+Description:
+"I understand that my investments can fall in value, and I can handle volatility for an appropriate long-term goal."
+
+OPTION B — I'D PREFER A STEADIER RIDE
+
+Description:
+"I'd like to explore options with less volatility and understand the trade-offs."
+
+OPTION C — I'M NOT SURE YET
+
+Description:
+"Help me understand the options before I decide."
+
+Design these as colourful, illustrated interactive scenes or blocks.
+
+Interactions:
+
+* Hover and selection animations.
+* Character reactions.
+* A visual response when a choice is made.
+* Smooth transition to the educational screen.
+
+Do not describe equity investments as safe or guaranteed. Do not assume that selecting a risk preference alone establishes suitability.
+
+## SCREEN 8 — UNDERSTANDING INVESTMENT RISK
+
+PURPOSE: Teach Aarav the basics before asking him to choose an investment.
+
+Headline:
+"Let's make the confusing stuff less confusing."
+
+Create an engaging educational scene explaining:
+
+### A. Risk and return
+
+Higher potential returns generally involve accepting more risk. Higher returns are not guaranteed.
+
+### B. Volatility
+
+Investments can rise and fall. The value may be lower when the user needs to withdraw money.
+
+### C. Diversification
+
+Explain how spreading investments across assets or companies can reduce concentration risk, but cannot eliminate market risk.
+
+### D. Investment horizon
+
+Money needed soon should not automatically be placed in volatile investments.
+
+### E. Liquidity
+
+Explain how easily an investment can be converted to cash, including any relevant restrictions or costs.
+
+### F. SIPs
+
+Explain that a Systematic Investment Plan is a method of investing regularly, often monthly. A SIP is not a separate investment product and does not guarantee profit.
+
+Keep each explanation short, visual, and interactive.
+
+Use illustrations, simple examples, animated comparisons, and optional "learn more" controls.
+
+Avoid long paragraphs and complicated financial jargon.
+
+CTA:
+"HELP ME FIND MY FIT ↗️"
+
+## SCREEN 9 — MY INVESTOR PROFILE
+
+PURPOSE: Collect enough information to tailor the next part of the journey.
+
+Ask a small number of questions, one at a time.
+
+QUESTION 1:
+"When might you need this money?"
+
+Options:
+
+* Within 1 year.
+* In 1–3 years.
+* In 3–5 years.
+* In 5+ years.
+
+QUESTION 2:
+"If your investment dropped by 20%, how would you feel?"
+
+Options:
+
+* I couldn't afford that loss.
+* I'd feel worried, but might wait.
+* I could tolerate the fall if it suited my goal and financial situation.
+
+QUESTION 3:
+"Have you built an emergency cushion yet?"
+
+Options:
+
+* Not yet.
+* I've saved a little.
+* I have enough to cover several months of essential expenses.
+
+QUESTION 4:
+"What's your main goal?"
+
+Options:
+
+* Build a savings cushion.
+* Save for a short-term purchase.
+* Build wealth over the long term.
+* Learn about investing before committing.
+
+Show a playful progress indicator.
+
+Save each response and allow the user to go back and change answers.
+
+Use the answers to tailor educational content. Do not present the questionnaire as a formal financial assessment or as a guarantee that an investment is appropriate.
+
+If the user needs the money soon, cannot afford losses, or has no emergency cushion, explain the relevant trade-offs before encouraging volatile investments.
+
+CTA:
+"SHOW ME MY OPTIONS ↗️"
+
+## SCREEN 10 — DISCOVER SIP OPTIONS
+
+PURPOSE: Help Aarav explore investment categories directly instead of leaving him with vague advice.
+
+Headline:
+"Meet your possible first investments."
+
+Supporting copy:
+"A SIP lets you invest regularly. The important part is choosing an investment that fits your goal."
+
+Present three main educational categories.
+
+### OPTION 1 — BROAD-MARKET INDEX FUNDS
+
+Explain:
+
+* They aim to track a particular market index.
+* They can provide exposure to many securities through one fund.
+* They still carry market risk.
+* Their value can decline.
+
+### OPTION 2 — FLEXI-CAP MUTUAL FUNDS
+
+Explain:
+
+* They can invest across large-, mid-, and small-cap companies.
+* Their performance depends on portfolio choices and market conditions.
+* They carry market risk and may underperform their benchmark.
+
+### OPTION 3 — SMALL-CAP MUTUAL FUNDS
+
+Explain:
+
+* They invest primarily in smaller companies.
+* They can experience substantial volatility.
+* They may be unsuitable for short-term goals or users unable to tolerate significant losses.
+
+Use Aarav's answers to decide which categories to explain in greater detail.
+
+Do not automatically recommend small-cap funds just because the user selected a high-risk option.
+
+For goals that require capital stability or short-term access to money, explain appropriate alternatives such as savings accounts, deposits, or other relevant lower-volatility options, including their own terms and risks.
+
+### If actual mutual fund schemes are shown
+
+Provide a small, curated shortlist rather than an overwhelming catalogue.
+
+Only display real scheme names and current factual details when verified information is available.
+
+Where available, show:
+
+* Scheme name.
+* Investment objective.
+* Risk information.
+* Expense ratio.
+* Benchmark.
+* Relevant performance data with its date.
+* Why the scheme may be worth researching.
+* Key limitations and risks.
+
+Never fabricate scheme data, returns, ratings, or rankings.
+
+Do not recommend a fund simply because it is popular or has recently performed well.
+
+Make it possible to compare options and read more before proceeding.
+
+CTA:
+"EXPLORE THIS OPTION"
+
+## SCREEN 11 — CHOOSE MY MONTHLY INVESTMENT AMOUNT
+
+PURPOSE: Convert the user's budget into a clear, editable investment plan.
+
+Headline:
+"Small steps. Repeated."
+
+Display:
+
+* Available monthly investment budget.
+* Proposed SIP amount.
+* Remaining money after the planned investment.
+* Percentage of income being invested.
+
+Use a large interactive slider and editable currency input.
+
+Suggested amounts should adapt to the user's actual income and budget. Never silently exceed their available investment allocation.
+
+Example:
+₹1,000 per month means ₹12,000 contributed over 12 months, excluding gains or losses.
+
+Allow the user to change the amount at any time.
+
+If the amount is zero, the user should still be able to continue learning without being pressured to invest.
+
+Show a clear summary before proceeding.
+
+CTA:
+"BUILD MY PLAN ↗️"
+
+## SCREEN 12 — MY FUTURE WEALTH CALCULATOR
+
+PURPOSE: Demonstrate the possible long-term effects of regular investing.
+
+Headline:
+"Let's see what consistency could look like."
+
+Inputs:
+
+* Monthly investment amount.
+* Investment duration.
+* Hypothetical annual return assumption.
+
+Display:
+
+* Total contributions.
+* Hypothetical future value.
+* Difference between projected value and contributions.
+* A chart separating contributions from hypothetical growth.
+
+Allow the user to switch between illustrative scenarios.
+
+All assumptions must be visible and editable.
+
+The calculation must use a documented method for monthly contributions and compounding. State whether contributions occur at the beginning or end of each period.
+
+Clearly explain:
+
+* Actual returns can be higher or lower.
+* Investment values can decline.
+* Projections are not promises.
+* Fees, taxes, and inflation can affect actual outcomes.
+
+Use an animated chart and an illustrated growth visual.
+
+Do not display guaranteed millionaire dates or misleading claims.
+
+## SCREEN 13 — SIP SETUP AND MONTHLY REMINDER
+
+PURPOSE: Explain the practical steps needed to begin investing.
+
+Headline:
+"Ready to make it a habit?"
+
+Summarise:
+
+* Selected investment option.
+* Planned monthly amount.
+* Intended investment duration.
+* Planned contribution date, if chosen.
+
+Explain that an actual SIP requires the appropriate account, scheme selection, and payment authorisation.
+
+Provide a clear reminder that a recurring monthly investment requires sufficient funds in the account.
+
+If the application does not have a real financial-provider integration, the CTA must say:
+
+"VIEW MY SETUP STEPS"
+
+Do not claim a SIP has been created or a recurring debit has been activated.
+
+Allow Aarav to select a preferred monthly reminder date and time if reminder functionality is supported.
+
+Clearly distinguish an in-app reminder from an actual bank debit or payment mandate.
+
+## SCREEN 14 — OPTIONAL MARKET SIMULATOR
+
+PURPOSE: Let Aarav explore hypothetical market behaviour in a safe educational environment.
+
+Create a simulated investment chart.
+
+Features:
+
+* Adjustable time period.
+* Hypothetical market rises and falls.
+* A starting investment amount.
+* A visual comparison of contributions and simulated value.
+* Explanations of volatility and market downturns.
+
+All data must be clearly labelled as simulated.
+
+Do not imply that the chart predicts actual returns or represents live market data.
+
+This is an optional educational experience, not a mandatory step.
+
+## SCREEN 15 — THE CELEBRATION SCREEN
+
+PURPOSE: Celebrate completion of the planning journey.
+
+Headline:
+"Look at you. Making money moves."
+
+Use:
+
+* A cheerful Aarav reaction.
+* A short confetti or coin animation.
+* A celebratory scene transition.
+* A concise summary of the user's plan.
+
+Show the user's actual saved values:
+
+* Current savings, if provided.
+* Monthly income.
+* Budget allocation.
+* Planned monthly investment.
+* Selected educational investment category or scheme, if chosen.
+* Future-value projection and assumptions, if calculated.
+
+Do not imply that the user has already earned profits or become wealthy.
+
+CTA:
+"LET'S SEE MY DASHBOARD ↗️"
+
+## SCREEN 16 — MY FINANCIAL DASHBOARD
+
+PURPOSE: Provide a useful home screen after completing the journey.
+
+The dashboard must feel like returning to Aarav's room, with the same character, illustrations, and design language.
+
+Avoid a generic banking-dashboard layout.
+
+Include these sections:
+
+### A. My money snapshot
+
+* Monthly income.
+* Current savings, if known.
+* Emergency savings.
+* Monthly budget allocation.
+* Planned monthly investment.
+
+### B. My budget
+
+Show the four categories:
+
+* Essentials.
+* Fun money.
+* Emergency savings.
+* Investments.
+
+Allow the user to edit their budget and recalculate the remaining balance.
+
+### C. My investment plan
+
+Show:
+
+* Selected investment category or scheme.
+* Planned monthly contribution.
+* Intended duration.
+* Next planned reminder, if configured.
+* Educational risk information.
+
+Distinguish a planned SIP from a real active investment.
+
+### D. My progress
+
+Show:
+
+* Contributions recorded by the application, if any.
+* Current investment value only if supplied by a genuine connected source or explicitly entered by the user.
+* Emergency savings progress.
+* Hypothetical projected value.
+
+Never confuse planned contributions, actual contributions, and current investment value.
+
+### E. My future
+
+Show the interactive future-value calculator with the user's saved assumptions.
+
+### F. Explore
+
+Allow the user to:
+
+* Edit their budget.
+* Update their risk-profile answers.
+* Revisit investment education.
+* Revisit their SIP plan.
+* Open the optional market simulator.
+
+Persist the user's progress locally where appropriate. Provide a clear reset-demo option.
+
+If the product has no real investment-provider integration, label the dashboard as a personal financial plan or prototype. Do not invent holdings, transactions, balances, or active SIP status.
+
+---
+
+# PART 2 — VISUAL AND INTERACTION REQUIREMENTS
+
+The entire product must maintain one consistent illustrated identity.
+
+## Visual identity
+
+Colours:
+
+* Warm cream: #F8F0DE
+* Cobalt blue: #245D91
+* Coral red: #C04C37
+* Butter yellow: #E7BD52
+* Muted green: #39795A
+* Dark ink: #22231F
+
+Typography:
+
+* Fraunces or DM Serif Display for display headlines.
+* DM Sans for body text and financial information.
+
+Visual motifs:
+
+* Aarav sitting at his desk.
+* Coins, wallet, notebook, laptop, books, calculator, and plants.
+* Hand-drawn arrows and doodles.
+* Paper-cutout shapes and colourful scene transitions.
+
+Do not introduce a completely different visual style on individual screens.
+
+## Animation language
+
+Use the existing animation library and implementation.
+
+Create:
+
+* Smooth left-to-right scene transitions.
+* Staggered text reveals.
+* Subtle character reactions.
+* Spring-like button interactions.
+* Animated currency values.
+* Interactive budget blocks.
+* Animated coin and savings visuals.
+* Interactive chart transitions.
+* A tasteful celebration.
+
+Avoid excessive motion, distracting animations, and transitions that prevent users from interacting.
+
+Respect reduced-motion preferences.
+
+## Responsive design
+
+Desktop:
+
+* Large illustrations and expressive layouts.
+* Strong composition and generous negative space.
+
+Mobile:
+
+* Recompose scenes vertically.
+* Keep Aarav recognisable.
+* Use large touch targets.
+* Keep currency inputs and financial information readable.
+* Prevent horizontal overflow.
+
+## Accessibility
+
+Implement:
+
+* Semantic HTML.
+* Keyboard navigation.
+* Visible focus states.
+* Accessible form labels.
+* Appropriate colour contrast.
+* Clear validation and error states.
+* Reduced-motion support.
+
+---
+
+# PART 3 — STATE MANAGEMENT AND FINANCIAL LOGIC
+
+Use the existing project architecture.
+
+Maintain shared application state for:
+
+* Savings amount and whether it is known.
+* Monthly income.
+* Income sources.
+* Budget allocations.
+* Remaining monthly balance.
+* Risk-profile answers.
+* Financial goal.
+* Selected investment category or scheme.
+* Planned SIP amount.
+* Planned contribution date.
+* Projection assumptions.
+* Dashboard preferences.
+
+Ensure that information entered in earlier scenes is preserved across later scenes and when navigating backwards.
+
+Use a single source of truth for financial values.
+
+Validate that:
+
+* Budget allocations are consistent with monthly income.
+* Investment amounts do not silently exceed the available budget.
+* Custom currency inputs are valid.
+* Unknown values are not treated as zero.
+* Contributions and projected gains remain separate.
+* Projections update when assumptions change.
+
+Keep financial calculations separate from UI components and test the important calculations.
+
+---
+
+# PART 4 — IMPLEMENTATION PRIORITIES
+
+Do not try to build every screen superficially at once.
+
+Implement and verify in this order:
+
+PHASE 1:
+
+* Preserve the existing landing page and welcome screen.
+* Complete the savings scene.
+* Complete the monthly income scene.
+* Complete the interactive budget builder.
+* Complete the budget reveal and transitions.
+
+PHASE 2:
+
+* Build the investment gateway.
+* Build the educational risk scene.
+* Build the investor questionnaire.
+* Build the investment category comparison.
+
+PHASE 3:
+
+* Build the monthly SIP planner.
+* Build the future-value calculator.
+* Build the setup/reminder scene.
+* Build the celebration screen.
+* Build the dashboard.
+
+PHASE 4:
+
+* Build the optional market simulator.
+* Polish animations and responsive behaviour.
+* Test every interaction.
+* Verify all financial calculations.
+* Fix browser console errors and missing assets.
+
+After each phase, run the application and test the complete flow.
+
+Do not leave dead buttons, non-functional sliders, placeholder navigation, or static elements pretending to be interactive.
+
+---
+
+# FINAL INSTRUCTION
+
+The goal is not simply to create a finance app. The goal is to create an illustrated, interactive financial journey that feels personal, playful, and memorable.
+
+The boy sitting at the desk is the anchor of the entire experience.
+
+Preserve the existing work, implement each scene in sequence, connect the complete user journey, and prioritise exceptional UI/UX.
+
+Start by inspecting the current codebase. Identify which screens already exist, what is incomplete, and what needs to be implemented next. Then make the changes directly in the code and verify them in the running application.
